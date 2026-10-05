@@ -1,0 +1,14 @@
+// Mock data. Later this can come from an API (e.g. fetch('/api/projects')).
+const members = ['Shane Black', 'Jane Wilson', 'Regina Cooper']
+
+export const projects = [
+  { id: 1, name: 'App Development', client: 'Dropbox, Inc.', description: 'Create a mobile application on iOS and Android devices.', progress: 50, timeLeft: '1 week left', urgent: false, status: 'Started', members, createdBy: 'Shane Black', color: '#0061ff', budget: '2.500.000' },
+  { id: 2, name: 'Website Redesign', client: 'GitLab Inc.', description: 'It is necessary to develop a website redesign in a corporate style.', progress: 75, timeLeft: '1 week left', urgent: false, status: 'Started', members, createdBy: 'Jane Wilson', color: '#fc6d26', budget: '1.200.000' },
+  { id: 3, name: 'Landing Page', client: 'Bitbucket, Inc.', description: 'It is necessary to create a landing together with the development of design.', progress: 100, timeLeft: '1 week left', urgent: false, status: 'Completed', members: members.slice(0, 2), createdBy: 'Shane Black', color: '#2684ff', budget: '800.000' },
+  { id: 4, name: 'Parser Development', client: 'Driveway, Inc.', description: 'It is necessary to develop a ticket site parser in python.', progress: 50, timeLeft: '5 days left', urgent: true, status: 'Started', members, createdBy: 'Jacob Hawkins', color: '#3776ab', budget: '600.000' },
+  { id: 5, name: 'App Development', client: 'Slack Technologies, Inc.', description: 'Create a mobile application on iOS and Android devices.', progress: 50, timeLeft: '5 days left', urgent: true, status: 'Started', members: members.slice(0, 2), createdBy: 'Jacob Hawkins', color: '#611f69', budget: '2.000.000' },
+  { id: 6, name: 'App Development', client: 'Google, Inc.', description: 'Create a mobile application on iOS and Android devices.', progress: 25, timeLeft: '1 week left', urgent: false, status: 'On Hold', members: members.slice(0, 2), createdBy: 'Ronald Robertson', color: '#ffa000', budget: '2.500.000' },
+  { id: 7, name: 'Admin Dashboard', client: 'ArtTemplate, Inc.', description: 'Necessary to create Admin Dashboard on Angular 8.', progress: 30, timeLeft: '1 week left', urgent: false, status: 'Started', members: members.slice(0, 2), createdBy: 'Shane Black', color: '#dd0031', budget: '900.000' },
+  { id: 8, name: 'Web App on Vue.js', client: 'ArtTemplate, Inc.', description: 'It is necessary to develop a web app on the framework Vue.js', progress: 100, timeLeft: '1 week left', urgent: false, status: 'Completed', members: members.slice(0, 2), createdBy: 'Robert Edwards', color: '#42b883', budget: '700.000' },
+  { id: 9, name: 'App Development', client: 'Facebook, Inc.', description: 'Create a mobile application on iOS and Android devices.', progress: 50, timeLeft: '1 week left', urgent: false, status: 'Started', members, createdBy: 'Ronald Robertson', color: '#0084ff', budget: '3.000.000' },
+]
